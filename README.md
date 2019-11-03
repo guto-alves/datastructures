@@ -1,2 +1,2 @@
-# datastructures
-Repository for studying/practicing Data Structures.
+# datastructures-and-algorithms
+Repository for studying/practicing Data Structures and Algorithms.
