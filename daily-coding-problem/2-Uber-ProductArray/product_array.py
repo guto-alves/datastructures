@@ -9,6 +9,7 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be
 
 Follow-up: what if you can't use division?
 """
+
 from functools import reduce
 
 # Solution 1
@@ -49,7 +50,6 @@ def generate_array2(base_array):
 def generate_array3(base_array):
     product = reduce(lambda x, y: x * y, base_array)
     return [product // element for element in base_array]
-
 
 assert generate_array1([3, 2, 1]) == [2, 3, 6]
 assert generate_array1([1, 2, 3, 4, 5]) == [120, 60, 40, 30, 24]

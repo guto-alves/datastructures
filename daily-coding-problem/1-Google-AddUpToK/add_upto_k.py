@@ -20,7 +20,7 @@ def add_upto_k(array, k):
     return False
 
 def add_upto_k2(array, k):
-    sorted(array)
+    array.sort()
     
     i = 0
     j = len(array) - 1
