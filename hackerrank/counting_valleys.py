@@ -1,21 +1,21 @@
 def countingValleys(n, s):
-    depth = 0
-    valleyCount = 0
+    seaLevel = 0
+    valleysCount = 0
     inValley = False
 
     for step in s:
-        if step == "U":
-            depth += 1
+        if step == 'U':
+            seaLevel += 1
         else:
-            depth -= 1
+            seaLevel -= 1
 
-        if depth < 0 and not inValley:
-            valleyCount += 1
+        if seaLevel < 0 and not inValley:
+            valleysCount += 1
             inValley = True
-        elif depth == 0:
+        elif seaLevel == 0:
             inValley = False
         
-    return valleyCount
+    return valleysCount
 
 
 if __name__ == '__main__':
